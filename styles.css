@@ -175,9 +175,63 @@ section h3 {
   text-align: center;
 }
 
-#contact p {
-  color: #dbeafe;
-  font-size: 17px;
+/* "Interested in connecting?" intro text */
+#contact .contact-info > p:first-child {
+  color: #e2e8f0;           /* Soft bright white — easy on dark screens */
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: 0.3px;
+}
+
+/* WhatsApp link */
+#contact .contact-info a[href*="wa.me"] {
+  color: #4ade80;            /* Vibrant WhatsApp green */
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+
+#contact .contact-info a[href*="wa.me"]:hover {
+  color: #86efac;
+}
+
+/* Google Form link */
+#contact .contact-info a[href*="google"] {
+  color: #93c5fd;            /* Sky blue — calm and readable */
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+#contact .contact-info a[href*="google"]:hover {
+  color: #bfdbfe;
+}
+
+/* Email & Phone labels */
+#contact .contact-info p {
+  color: #cbd5e1;            /* Light slate — readable but not harsh */
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Email & Phone links */
+#contact .contact-info a[href^="mailto"],
+#contact .contact-info a[href^="tel"] {
+  color: #60a5fa;            /* Bright blue accent */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+#contact .contact-info a[href^="mailto"]:hover,
+#contact .contact-info a[href^="tel"]:hover {
+  color: #93c5fd;
 }
 
 
