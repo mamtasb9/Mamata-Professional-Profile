@@ -13,9 +13,12 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #07152f;
+  /* Rich deep navy-to-midnight gradient — premium finance look */
+  background: linear-gradient(160deg, #020b18 0%, #0b1f3a 40%, #0f2a4a 70%, #071525 100%);
+  background-attachment: fixed;
   color: white;
   line-height: 1.6;
+  min-height: 100vh;
 }
 
 
@@ -28,7 +31,10 @@ nav {
   justify-content: center;
   gap: 35px;
   padding: 18px 20px;
-  background: #111827;
+  background: rgba(2, 11, 24, 0.92); /* Dark glass nav */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(96, 165, 250, 0.15);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -59,10 +65,12 @@ header {
   text-align: center;
   padding: 60px 20px;
 
+  /* Hero gradient — deep to mid navy, professional & bold */
   background: linear-gradient(135deg,
-      #07152f,
-      #102a56,
-      #163d70);
+      #020b18 0%,
+      #0b1f3a 35%,
+      #163d70 70%,
+      #1a4f8a 100%);
 }
 
 header h1 {
@@ -90,7 +98,7 @@ main {
 
 section {
   padding: 60px 0;
-  border-bottom: 1px solid #243b5a;
+  border-bottom: 1px solid rgba(96, 165, 250, 0.12);
 }
 
 section h2 {
